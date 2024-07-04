@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+}
+.tarjeta{
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.tarjeta img{
+    width: 100%;
+}
+.cuerpo{
+    margin: 10px;
+}

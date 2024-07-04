@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> </div>
+    <div class="info"> </div>
+    <script>
+        const div1 = document.querySelector("div")     // <div></div>
+        div1.textContent = "Hola a todos"              // <div>Hola a todos</div>
+        const div2 = document.querySelector(".info")   // <div class="info"></div>
+        div2.textContent = "<strong>Importante</strong>" // Interpreta el HTML
+    </script>
+</body>
+</html>

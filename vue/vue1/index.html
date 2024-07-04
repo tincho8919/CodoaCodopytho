@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="app">
+    <div v-show="error">
+        <p>Se produjo un error intente mas tarde</p>
+    </div>
+    <div v-html = "etiquetashtml"></div>
+    <p>{{nombre}}</p>
+    <p v-text="apellido"></p>
+    <p>{{edad}}</p>
+    <p v-if="edad>=18">Mayor de edad</p>
+    <p v-else>Menor de edad</p>
+    <h2>Hijos</h2>
+    <ul>
+        <li v-for="elementos in hijos">{{elementos}}</li>
+
+    </ul>
+    <label for="">Nombre</label>
+    <input type="text" v-model="nombre">
+    <a v-bind:href="link">bitcoin</a>
+    <a :href="link">bitcoin</a>
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div v-if="error===true">
+            Se produjo un error comuniquese con el administrador
+        </div>
+        <div v-else>
+            <h1 v-text="message"></h1>
+            <P>Nombre: {{nombre}}</P>
+            <P>Apellido: {{apellido}}</P>
+            <img width="100px" v-bind:src="foto" v-bind:alt="nombre">
+            <img width="100px" :src="foto" :alt="nombre">
+            <P>Edad: {{edad}}</P>
+            <P v-if="edad>=18">Es mayor de edad</P>
+            <p v-else>Es menor de edad</p>
+            <h3>Hijos</h3>
+            <!-- <p v-for="hijo in hijos">{{hijo}}</p> -->
+            <ul>
+                <li v-for="hijo in hijos">{{hijo}}</li>
+
+            </ul>
+            <label for="">Edad</label>
+            <input type="text" name="" id="" v-model="edad">
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

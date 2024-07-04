@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .contenedor{
+            height:600px ;
+            display:flex;
+            background-color: rgb(148, 198, 242);
+            flex-direction:row;  /*eje principal */
+            flex-wrap:wrap; /* wrap / nowrap / wrapreverse*/
+            justify-content:space-evenly;   /* eje principal   center flex-start flex-end  */
+            row-gap: 20px;
+            /*space- evenly space-between flex-around */
+            /* align-items: center; */   /*eje secundario */
+        }
+        .item{
+            background-color: rgb(140, 140, 243);
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;            
+        }
+    </style>
+</head>
+<body>
+    <div  class="contenedor">
+
+        <div class="item"> 1 </div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3 </div>
+        <div class="item"> 4 </div>
+        <div class="item"> 5 </div>
+        <div class="item"> 6 </div>
+        <div class="item"> 7 </div>
+        <div class="item"> 8 </div>
+
+    </div>
+    
+</body>
+</html>

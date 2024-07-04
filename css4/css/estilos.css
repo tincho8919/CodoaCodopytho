@@ -1,0 +1,8 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: translate(100px, 100px) rotate(45deg) scale(2, 4);
+    /* transform: rotate(45deg);
+    transform: scale(2,4); */
+} 

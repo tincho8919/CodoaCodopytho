@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2 , 25%) repeat(2 , 25%); /*Cantidad y ancho de columnas*/
+                        /* 33% 33% 33% ;*/
+                        /* 33% 33% auto ;*/
+                        /* 1fr 1fr 1fr ;*/                        
+                        /* repeat (3 , 33%) ;*/                        
+    
+    /*grid-template-rows: repeat(3,50px); */  
+    /*Cantidad y ancho de filas*/
+    gap:10px; /*A nivel de filas y columnas*/
+}
+
+.box{
+    background-color: slateblue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

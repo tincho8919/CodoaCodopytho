@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><body>
+<button onclick="clonar()">Copiar</button>
+<p>Presionando el botón se copia un elemento (leche) de la 2da lista a la primera.</p>
+<ul id="lista1"><li>Café</li><li>Té</li></ul>
+<ul id="lista2"><li>Agua</li><li>Leche</li></ul>
+<p></p>
+<script>
+function clonar() {
+   const nodo = document.getElementById("lista2").lastChild  //Leemos el nodo a clonar, lo
+   const clon = nodo.cloneNode(true);                        //clonamos y guardamos en “clon”
+   document.getElementById("lista1").appendChild(clon)       //Y lo agregamos en la lista2
+}
+</script>
+</body></html>
+

@@ -1,0 +1,78 @@
+header,footer{
+    background-color: red;
+    color:white
+}
+footer{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h1:hover{ /*no funciona  */
+    animation: bounce;
+    animation-duration: 2s;
+}
+#tel:hover {
+    animation: bounce;   /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;  /* don't forget to set a duration! */
+}
+nav  a{  /* a la etiqueta nav que tiene como descendoiente una eituqta a*/
+    padding: 10px;
+    background-color:white;
+    text-decoration:none;
+    border: 1px solid brown;
+    margin: 5px;
+    border-radius: 5px;    
+    display:  inline-block;
+}
+nav a:link {color: red;}/* color rojo a todos los link*/
+nav a:hover {
+    background-color: yellow;
+    /*transform: skew(20deg)*/
+    animation: bounce;
+    animation-duration: 2s;
+
+}
+nav a:visited {color: blue;}
+nav a:active {background-color: green; color: white;}
+
+p::selection{
+    background-color: lightsalmon;
+}
+
+#tel{
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right:50px;
+    /*display: none;*/
+   /* visibility: hidden;*/
+}
+ 
+#contenedor{
+    padding-bottom: 20px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;   /* column , row-reverse,  col-reverse*/
+    flex-wrap: wrap;  /* nowrap wrap wrap-reverse*/
+    justify-content: space-evenly ;  /* center flex-start flex-end space-between (entre) space-around (alrededor)*/
+    height: 1200px;
+    row-gap: 20px;
+    /*align-content: space-around; */ /* center flex-end flex-start space-around space-between*/
+}
+/* tarjeta */
+#card{
+    width: 250px;
+    padding: 5px;
+    border: 1px solid black;
+    
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.imagencard{
+    width: 100%;
+}
+
+
+

@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+header , footer{ /*al header y al footer*/
+    color: white;
+    background-color: tomato;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#pie{
+    text-align: center;
+}
+nav{
+    text-align: right;
+}
+#navfooter{
+    text-align: center;
+}
+.amarillo{ /*le da estilo a todas las etiquetas que tengan clase class="amarillo"*/
+    background-color: yellow;
+    
+}
+#nav{
+    background-color: pink;
+}
+div{
+    font-size: 24px;
+}
